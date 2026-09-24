@@ -414,7 +414,7 @@ section:last-of-type {
   color: var(--accent);
 }
 
-.project-card {
+/* .project-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -472,7 +472,7 @@ section:last-of-type {
   padding: 8px 16px;
   border-radius: 8px;
   cursor: not-allowed;
-}
+} */
 
 .ed-cert-grid {
   display: grid;
