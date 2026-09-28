@@ -43,7 +43,7 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <!-- <li><a href="#projects">Projects</a></li> -->
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -80,7 +80,7 @@
           Turning ideas into interfaces, and data into decisions.
         </p>
         <div class="hero-actions">
-          <!-- <a href="#projects" class="btn btn-primary">View Projects</a> -->
+          <a href="#projects" class="btn btn-primary">View Projects</a>
           <a
             href="Mannan Resume.pdf"
             download="Mannan Resume.pdf"
@@ -193,39 +193,126 @@
       </div>
     </section>
 
-    <!-- <section id="projects"> -->
-      <!-- <p>Coming soon</p> -->
-      <!-- <div class="container reveal">
+    <section id="projects">
+      <div class="container reveal">
         <div class="eyebrow">Projects</div>
         <h2 class="section-title">Featured work</h2>
-        <div class="project-card">
-          <h3>Blood Bank Management System</h3>
-          <p class="desc">
-            Streamlines the process of managing blood donations, inventory, and
-            requests — ensuring timely availability of safe blood while reducing
-            manual effort, errors, and delays. Built as part of a team; my
-            contribution covered UI/UX design and connecting the frontend to the
-            backend.
-          </p>
-          <div class="project-stack">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Python</span>
-            <span class="tag">SQL</span>
+        <div class="projects-grid">
+          <!-- Featured Project: BCG X GenAI Financial Chatbot -->
+          <div class="project-card featured-project">
+            <div class="project-header">
+              <div class="project-badge">BCG X GenAI Job Simulation &middot; via Forage</div>
+              <h3>Financial Analysis Chatbot Prototype</h3>
+            </div>
+            <p class="desc">
+              An AI-powered conversational financial analysis prototype built during the BCG X GenAI Job Simulation on Forage. Analyzes 3 years of SEC EDGAR 10-K filings (FY2023&ndash;FY2025) for Microsoft, Tesla, and Apple. Evaluates key performance indicators including 3-year revenue growth, YoY net income variance, net profit margins (NPM), Return on Assets (ROA), and operating cash flow (OCF) distributions through an intelligent rule-based NLP query matching engine.
+            </p>
+            <div class="project-stack">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Financial Analytics</span>
+              <span class="tag">SEC EDGAR 10-K</span>
+              <span class="tag">NLP Query Matching</span>
+              <span class="tag">CLI &amp; Testing</span>
+            </div>
+            <ul class="project-features">
+              <li>Multi-year 10-K financial statement analysis (Microsoft, Tesla, Apple)</li>
+              <li>Profitability ranking and Net Profit Margin (NPM) calculation</li>
+              <li>Operating Cash Flow (OCF) distribution and YoY variance evaluation</li>
+              <li>Fuzzy keyword and query intent mapping for natural language Q&amp;A</li>
+              <li>Interactive CLI with session logging and automated test suite</li>
+            </ul>
+
+            <!-- Interactive Demo Box -->
+            <div class="project-demo-box">
+              <div class="demo-box-header">
+                <span class="demo-dot"></span>
+                <span class="demo-title">Interactive Prototype Query Demo</span>
+              </div>
+              <p class="demo-hint">Click a sample financial query to test the chatbot engine's response:</p>
+              <div class="demo-query-chips">
+                <button class="query-chip active" data-query="total_revenue">Total Revenue (FY2025)</button>
+                <button class="query-chip" data-query="net_income_change">Net Income YoY Trend</button>
+                <button class="query-chip" data-query="profitability">Profitability Ranking</button>
+                <button class="query-chip" data-query="microsoft">Microsoft Performance</button>
+                <button class="query-chip" data-query="ocf">Operating Cash Flow</button>
+              </div>
+              <div class="demo-output-terminal">
+                <div class="terminal-bar">
+                  <span class="term-btn red"></span>
+                  <span class="term-btn yellow"></span>
+                  <span class="term-btn green"></span>
+                  <span class="term-title">terminal &mdash; python financial_chatbot.py</span>
+                </div>
+                <pre class="terminal-body" id="chatbotDemoOutput">The total revenue across Microsoft, Tesla, and Apple in FY2025 is $792,711 million ($792.7 billion). Microsoft: $281,724M, Apple: $416,160M, Tesla: $94,827M.</pre>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <button
+                class="cert-view-btn cert-project-btn"
+                data-file="Certifications/BCG X GenAi Job.pdf"
+                aria-label="View BCG X Certification"
+              >
+                <span class="icon">📜</span> View BCG X Certificate
+              </button>
+              <!-- <a
+                href="https://github.com/Mannan-Mishra-Dev"
+                target="_blank"
+                rel="noopener"
+                class="project-link-btn"
+              >
+                <span class="icon">⌥</span> GitHub
+              </a> -->
+              <a
+                href="financial_chatbot.py"
+                download="financial_chatbot.py"
+                class="project-link-btn"
+              >
+                <span class="icon">⬇</span> Download Code (.py)
+              </a>
+            </div>
           </div>
-          <ul class="project-features">
-            <li>Donor registration</li>
-            <li>Inventory tracking</li>
-            <li>Request matching</li>
-          </ul>
-          <div class="project-links">
-            <a href="#" title="Link coming soon">GitHub (soon)</a>
-            <a href="#" title="Link coming soon">Live Demo (soon)</a> -->
-          <!-- </div>
+
+          <!-- Project 2: Blood Bank Management System -->
+          <!-- <div class="project-card">
+            <div class="project-header">
+              <div class="project-badge project-badge-alt">Academic Team Project</div>
+              <h3>Blood Bank Management System</h3>
+            </div>
+            <p class="desc">
+              Streamlines the process of managing blood donations, inventory, and
+              requests &mdash; ensuring timely availability of safe blood while reducing
+              manual effort, errors, and delays. Built as part of a team; contributed to
+              UI/UX design and connecting the frontend to the backend logic.
+            </p>
+            <div class="project-stack">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+            </div>
+            <ul class="project-features">
+              <li>Donor registration and donor record management</li>
+              <li>Real-time blood stock inventory tracking</li>
+              <li>Automated request matching and verification</li>
+            </ul>
+            <div class="project-links">
+              <a
+                href="https://github.com/Mannan-Mishra-Dev"
+                target="_blank"
+                rel="noopener"
+                class="project-link-btn"
+              >
+                <span class="icon">⌥</span> GitHub
+              </a>
+              <span class="project-status-tag">In Active Development</span>
+            </div>
+          </div> -->
         </div>
-      </div> -->
-    <!-- </section> -->
+      </div>
+    </section>
 
     <section id="education">
       <div class="container reveal">

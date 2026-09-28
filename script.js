@@ -250,3 +250,51 @@ document
 document
   .getElementById("pdfModalBody")
   .addEventListener("contextmenu", (e) => e.preventDefault());
+
+// Interactive Financial Chatbot Prototype Demo Logic
+const chatbotResponses = {
+  total_revenue:
+    "The total revenue across Microsoft, Tesla, and Apple in FY2025 is $792,711 million ($792.7 billion).\n" +
+    "• Microsoft: $281,724M\n" +
+    "• Apple: $416,160M\n" +
+    "• Tesla: $94,827M.",
+  net_income_change:
+    "Here's how net income has changed for each company from FY2023 to FY2025:\n\n" +
+    "• Microsoft: increased by $29,471M (40.7%) from $72,361M (FY2023) to $101,832M (FY2025)\n" +
+    "• Apple: increased by $15,015M (15.5%) from $96,995M (FY2023) to $112,010M (FY2025)\n" +
+    "• Tesla: decreased by $11,180M (74.7%) from $14,974M (FY2023) to $3,794M (FY2025)",
+  profitability:
+    "Profitability Ranking for FY2025 (by Net Income):\n\n" +
+    "1. Apple: $112,010M net income (Net Profit Margin: 26.9%)\n" +
+    "2. Microsoft: $101,832M net income (Net Profit Margin: 36.1%)\n" +
+    "3. Tesla: $3,794M net income (Net Profit Margin: 4.0%)",
+  microsoft:
+    "Microsoft Financial Summary (FY2025):\n" +
+    "• Revenue: $281,724M (3-year growth: +32.9%)\n" +
+    "• Net Income: $101,832M (3-year growth: +40.7%)\n" +
+    "• Total Assets: $619,000M\n" +
+    "• Operating Cash Flow: $136,160M\n" +
+    "• Net Profit Margin: 36.1%\n" +
+    "• Return on Assets (ROA): 16.5%",
+  ocf:
+    "Operating Cash Flow (OCF) for FY2025:\n\n" +
+    "• Microsoft: $136,160M (51.9% of total)\n" +
+    "• Apple: $111,480M (42.5% of total)\n" +
+    "• Tesla: $14,700M (5.6% of total)\n\n" +
+    "Total OCF: $262,340M",
+};
+
+const queryChips = document.querySelectorAll(".query-chip");
+const terminalOutput = document.getElementById("chatbotDemoOutput");
+
+queryChips.forEach((chip) => {
+  chip.addEventListener("click", () => {
+    queryChips.forEach((c) => c.classList.remove("active"));
+    chip.classList.add("active");
+    const queryKey = chip.getAttribute("data-query");
+    if (chatbotResponses[queryKey] && terminalOutput) {
+      terminalOutput.textContent = chatbotResponses[queryKey];
+    }
+  });
+});
+

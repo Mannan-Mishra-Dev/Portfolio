@@ -5,8 +5,10 @@ A modern, responsive portfolio website built to showcase my skills, projects, ce
 ✨ Features
 Responsive design for desktop and mobile devices.
 Dark and Light mode theme toggle.
+Featured Projects showcase (including the BCG X GenAI Financial Analysis Chatbot Prototype and Blood Bank Management System).
+Interactive Chatbot Prototype Query Demonstration.
 Skills section highlighting technical expertise.
-Certifications and achievements.
+Certifications with secure in-browser PDF preview.
 About Me and Contact sections.
 Clean UI with optimized performance and accessibility.
 🛠️ Technologies Used
